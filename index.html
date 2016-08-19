@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<title>Barra de Navegacion</title>
+	<link rel="stylesheet" type="text/css" href="css/miEstilo.css">
+</head>
+
+<body>
+	<header>
+  <section class="wrapper">
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Tutoriales</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Preguntame algo</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+    </nav>
+    </section>
+</header>
+
+<section class="contenido wrapper">
+
+<article>
+	<p>La forma más sencilla de personalizar Bootstrap es tratarlo de la misma manera que cualquier otra dependencia de tu proyecto. De esta forma, cuando Bootstrap publique una actualización, será muy sencillo incorporar esos cambios en tus proyectos.
+
+	Una vez descargado Bootstrap y enlazado su archivo CSS en tus plantillas, ya puedes personalizar el aspecto y el comportamiento de sus componentes. Para ello, crea una nueva hoja de estilos (en formato LESS o, si lo prefieres, directamente con CSS) para definir tus cambios.</p>
+</article>
+  
+<article>
+	 <p>A menos que tengas que estudiar sus contenidos, siempre es mejor utilizar la versión comprimida (bootstrap.min.css) en vez de la versión simplemente compilada (bootstrap.css).
+
+	Los contenidos de los dos archivos son exactamente los mismos, pero la versión comprimida ocupa muchísimo menos. De esta forma consumirás menos ancho de banda y las páginas se cargarán más rápido, especialmente en los servidores de producción.
+	Después de crear esta hoja de estilos propia, ya puedes incluir todos los componentes de Bootstrap y código HTML que quieras para crear tus plantillas.</p>
+</article>
+ 
+<article>
+	<p>La personalización de los componentes de Bootstrap se puede dividir en dos tipo: cambios pequeños en el diseño de los componentes y rediseño gráfico completo de los componentes.
+
+Los cambios pequeños son modificaciones en los elementos gráficos básicos del componente, como su color o el tamaño y tipo de letra. Un buen ejemplo de cómo conseguirlo es el Twitter Translation Center (que ha sido creado por uno de los autores de Bootstrap). A continuación se muestra a modo de ejemplo cómo se creó el botón personalizado de ese sitio web, cuya clase CSS es .btn-ttc.
+
+En primer lugar, en vez de utilizar los botones que incluye Bootstrap (que sólo requieren añadir la clase .btn), se definió una nueva clase CSS propia llamada .btn-ttc. De esta forma se reduce al mínimo el esfuerzo de crear un estilo gráfico propio.</p>
+</article>
+  
+<article>
+	 <p>Personalizar el diseño de los componentes de Bootstrap lleva su tiempo, pero es bastante sencillo. Te aconsejamos que mires el código fuente de Bootstrap y copies los selectores del elemento que quieres modificar. Pega estos selectores después de todo el código de Bootstrap y así habrás redefinido los estilos de ese componente fácilmente. A modo de resumen, este es el flujo de trabajo recomendado:
+
+    Para cada componente que quieras modificar, busca sus estilos en el archivo CSS compilado de Bootstrap.
+    Copia y pega todos los selectores de ese elemento. Para personalizar por ejemplo la imagen o color de fondo de la barra de navegación, copia el selector .navbar.
+    Añade todo tu código CSS en una hoja de estilos independiente, utilizando los selectores que has copiado anteriormente. De esta forma no es necesario que añadas más clases a tus selectores o que utilices la palabra clave !important en las declaraciones de tus estilos.
+    Repite este proceso para todos los componentes que quieras personalizar.
+
+Modificar completamente el diseño gráfico de un componente es igual de sencillo, pero cuesta muchísimo más tiempo. Observa el código del sitio Karma para ver un ejemplo de personalización avanzada de Bootstrap.</p>
+</article>
+ 
+<article>
+	<p>No todos los sitios y aplicaciones web necesitan todos los componentes de Bootstrap. Esto es especialmente importante en los servidores de producción, donde el ancho de banda extra consumido por los componentes que no se utilizan puede suponer un gran coste.
+
+Por este motivo, te animamos a que utilices el personalizador de Bootstrap, que te permite crear una versión personalizada de Bootstrap que incluye solamente los componentes que necesitas.
+
+Gracias a este personalizador, puedes desactivar cualquier componente, imagen o elemento que no necesites. Una vez creado tu propio Bootstrap, descárgalo y utiliza estos archivos CSS y JavaScript en vez de los archivos por defecto de Bootstrap. Todo seguirá funcionando igual de bien, pero el Bootstrap de tu sitio o aplicación ya no incluirá ni estilos CSS ni código JavaScript que no vas a utilizar. Además, estas versiones personalizadas de Bootstrap también incluyen dos variantes, la compilada y la compilada + comprimida. </p>
+</article>
+
+<article>
+	 <p>Bootstrap establece una serie de estilos por defecto para la tipografía de todos los elementos y para los enlaces de la página. En concreto:
+
+    Se establece a blanco el color de fondo del body con la propiedad background-color: white;
+    Se utiliza el valor de las variables @font-family-base, @font-size-base y @line-height-base definidas por LESS como atributos de las propiedades tipográficas de los elementos.
+    Se establece el color de los enlaces al valor de la variable @link-color de LESS y sólo se muestran los enlaces subrayados en el estado :hover
+
+Esta primera inicialización de estilos se define en el archivo scaffolding.less.</p>
+</article>
+  
+
+</section>
+
+</body>
+
+</html>
